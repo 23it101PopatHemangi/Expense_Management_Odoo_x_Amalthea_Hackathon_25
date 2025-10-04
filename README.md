@@ -117,3 +117,8 @@ Companies struggle with:
 # Clone repository
 git clone https://github.com/your-username/expenseease.git
 cd expenseease
+
+## cd frontend
+
+npm install
+npm start
