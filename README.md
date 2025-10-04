@@ -122,3 +122,6 @@ cd expenseease
 
 npm install
 npm start
+
+## cd backend
+node mongodb-server.js
