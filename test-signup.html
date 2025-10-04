@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Signup</title>
+</head>
+<body>
+    <h1>Test Signup</h1>
+    <form id="signupForm">
+        <input type="text" id="name" placeholder="Name" value="Test User" required><br><br>
+        <input type="email" id="email" placeholder="Email" value="test@example.com" required><br><br>
+        <input type="password" id="password" placeholder="Password" value="password123" required><br><br>
+        <select id="country" required>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="European Union">European Union</option>
+        </select><br><br>
+        <button type="submit">Test Signup</button>
+    </form>
+    
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                password: document.getElementById('password').value,
+                country: document.getElementById('country').value
+            };
+            
+            try {
+                const response = await fetch('http://localhost:5000/api/auth/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    document.getElementById('result').innerHTML = `
+                        <h3 style="color: green;">✅ Signup Successful!</h3>
+                        <pre>${JSON.stringify(result, null, 2)}</pre>
+                    `;
+                } else {
+                    document.getElementById('result').innerHTML = `
+                        <h3 style="color: red;">❌ Signup Failed!</h3>
+                        <p><strong>Status:</strong> ${response.status}</p>
+                        <pre>${JSON.stringify(result, null, 2)}</pre>
+                    `;
+                }
+            } catch (error) {
+                document.getElementById('result').innerHTML = `
+                    <h3 style="color: red;">❌ Network Error!</h3>
+                    <p>${error.message}</p>
+                    <p>Make sure the server is running on port 5000</p>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>
