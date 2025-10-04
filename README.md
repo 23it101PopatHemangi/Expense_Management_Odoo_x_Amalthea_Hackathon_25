@@ -134,12 +134,12 @@ Companies struggle with:
 git clone https://github.com/your-username/expenseease.git
 cd expenseease
 
-### 🖥 Frontend Setup
+# 🖥 Frontend Setup
 ```bash
 cd client
 npm start
 
-### 🖥 Backend Setup
+#🖥 Backend Setup
 ```bash
 npm install
 cd server 
