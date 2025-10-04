@@ -112,7 +112,7 @@ Companies struggle with:
 ---
 
 
-## 📸 Glimpse Of Our Project
+## 📸 Screenshots
 
 ### 🔑 Login Page
 ![Login Page](./src/screenshots/login.jpeg)
@@ -133,14 +133,3 @@ Companies struggle with:
 # Clone repository
 git clone https://github.com/your-username/expenseease.git
 cd expenseease
-
-### 🖥 Frontend Setup
-```bash
-cd client
-npm start
-
-### 🖥 Backend Setup
-```bash
-npm install
-cd server 
-node mongodb-server.js
