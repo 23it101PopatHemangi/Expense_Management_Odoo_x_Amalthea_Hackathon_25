@@ -88,7 +88,7 @@ Companies struggle with:
 |-------|-------------|
 | 🎨 Frontend | React.js, Tailwind CSS |
 | ⚙ Backend | Node.js, Express.js |
-| 🗄 Database | PostgreSQL |
+| 🗄 Database | MongoDB  |
 | 🔐 Auth | JWT |
 | 🧠 OCR | Tesseract.js / Google Vision |
 | 🚀 Deployment | Docker + AWS / Heroku / Vercel |
