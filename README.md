@@ -116,8 +116,8 @@ Companies struggle with:
 
 ## 📸 Screenshots
 
-### 📝 Signup Page
-![Signup Page](./src/screenshots/signup.jpeg)
+### 🔑 Login Page
+![Login Page](./src/screenshots/login.jpeg)
 
 ### 👤 Admin Dashboard
 ![Admin Dashboard](./src/screenshots/admin.jpeg)
