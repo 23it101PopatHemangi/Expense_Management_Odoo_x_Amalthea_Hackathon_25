@@ -9,150 +9,111 @@
 
 ---
 
-⚡ ExpenseEase simplifies and automates corporate expense reimbursement with AI-powered OCR receipt scanning, dynamic approval workflows, and multi-currency support — all while ensuring transparency and control.
+⚡ **A modern web platform that makes expense management effortless** with OCR-powered receipt scanning, multi-level approvals, and smart conditional workflows.
 
-✨ Why ExpenseEase?
-💡 The Problem
+---
 
-Companies often face challenges like:
+## ✨ Why ExpenseEase?
 
-❌ Manual and time-consuming reimbursement processes
+### 💡 The Problem
+Companies struggle with:
+- ❌ Manual, error-prone reimbursement processes  
+- ❌ No flexible approval workflows  
+- ❌ Lack of visibility & transparency  
 
-❌ High chances of human error
+### 🚀 Our Solution – ExpenseEase
+- ✔ Automates approvals with role-based flows  
+- ✔ Adds conditional rules (e.g., % approvals or CFO override)  
+- ✔ Uses OCR to auto-read receipts & generate expenses  
+- ✔ Provides real-time multi-currency support  
 
-❌ Lack of flexible approval workflows
+---
 
-❌ Poor visibility into expense statuses
+## 🔑 Key Features
 
-🚀 Our Solution – ExpenseEase
+### 👤 Authentication & User Management
+- Auto-create Company & Admin on signup (currency auto-set by country)  
+- Admin manages employees, managers, roles & hierarchies  
 
-ExpenseEase revolutionizes expense management by providing:
+### 🧾 Expense Submission (Employee)
+- Submit claims with amount, category, date, description  
+- Supports multi-currency with automatic conversion  
+- View personal expense history (approved/rejected)  
 
-✅ Role-based multi-level approval system
+### ✅ Approval Workflow (Manager/Admin)
+- Multi-level approvals (e.g., Manager → Finance → Director)  
+- Approvers can approve/reject with comments  
 
-✅ Smart conditional workflows (percentage or specific approver-based)
+### 🎯 Conditional Approval Rules
+- **Percentage rule** → e.g., 60% approvers required  
+- **Specific approver rule** → e.g., CFO auto-approves  
+- **Hybrid rule** → 60% OR CFO approval  
 
-✅ OCR-powered receipt scanning and auto-expense generation
+### 📷 OCR for Receipts
+- Upload/scan receipts  
+- AI extracts amount, date, category, merchant → auto-fills expense  
 
-✅ Real-time currency conversion and localization
+---
 
-✅ Transparent dashboards for employees, managers, and admins
+## 👥 Roles & Permissions
 
-🧩 Core Features
-🔐 Authentication & User Management
+| Role | Permissions |
+|------|--------------|
+| **Admin** | Manage company, roles, workflows, override approvals, view all expenses |
+| **Manager** | Approve/reject team expenses, view team reports, escalate as per rules |
+| **Employee** | Submit expenses, track approval status, view expense history |
 
-On first signup/login:
+---
 
-A new company is auto-created with the country’s default currency.
+## 🏗 Architecture
 
-The Admin user is auto-generated.
+🔹 **Frontend:** React.js / Next.js + Tailwind CSS (OCR upload UI)  
+🔹 **Backend:** Node.js + Express.js (REST APIs for auth, expenses & approvals)  
+🔹 **Database:** PostgreSQL (users, roles, workflows, expenses)  
+🔹 **APIs Integrated:**
+- [REST Countries API](https://restcountries.com/) → for company currency setup  
+- [Exchange Rate API](https://api.exchangerate-api.com/) → for currency conversions  
 
-Admin can:
+---
 
-Create Employees & Managers
+## 📌 Workflow
 
-Assign or change roles
+> Employee submits → Manager reviews → Finance → Director → Conditional rules applied → Final status
 
-Define manager-employee relationships
+---
 
-💰 Expense Submission (Employee Role)
+## 🛠 Tech Stack
 
-Employees can:
+| Layer | Technology |
+|-------|-------------|
+| 🎨 Frontend | React.js, Tailwind CSS |
+| ⚙ Backend | Node.js, Express.js |
+| 🗄 Database | PostgreSQL |
+| 🔐 Auth | JWT |
+| 🧠 OCR | Tesseract.js / Google Vision |
+| 🚀 Deployment | Docker + AWS / Heroku / Vercel |
 
-Submit expense claims with amount, category, description, and date
+---
 
-Upload receipts (auto-read via OCR)
+## 🎨 Mockups
+👉 [View Excalidraw Mockup](#) *(add link when available)*  
 
-View expense history (Approved/Rejected)
+---
 
-🧾 Approval Workflow (Manager/Admin Role)
+## 🔄 Approval Flow
 
-Multi-level sequential approval setup
+1️⃣ Employee submits expense  
+2️⃣ Manager reviews → approve/reject  
+3️⃣ Finance reviews → approve/reject  
+4️⃣ Director makes final decision  
+5️⃣ Conditional rules (CFO approval / % rule) can shortcut the flow  
+6️⃣ Final status → visible to employee instantly  
 
-Example:
+---
 
-Step 1 → Manager
+## ⚙ Setup Instructions
 
-Step 2 → Finance
-
-Step 3 → Director
-
-Expense moves to the next approver only after current approval
-
-Managers can view, approve/reject expenses with comments
-
-🧠 Conditional Approval Rules
-
-Percentage Rule: Approve if X% of approvers approve
-
-Specific Approver Rule: Auto-approved if CFO approves
-
-Hybrid Rule: Combine both rules
-
-Supports multiple and conditional approvers simultaneously
-
-🧾 OCR for Receipts
-
-Upload or scan a receipt → fields like amount, date, description, and vendor name are auto-filled
-
-Saves time and prevents manual data errors
-
-🌍 Multi-Currency & Localization
-
-Fetch currency data via:
-👉 REST Countries API
-
-Currency conversion using:
-👉 ExchangeRate API
-
-🧑‍💻 Roles & Permissions
-Role	Permissions
-👑 Admin	Create company (auto on signup), manage users, set roles, configure approval rules, view all expenses, override approvals
-👔 Manager	Approve/reject team expenses, view reports, escalate as per rules
-👩‍💼 Employee	Submit expenses, upload receipts, view personal expense history
-⚙️ Tech Stack
-
-Frontend: React.js, Tailwind CSS
-Backend: Node.js, Express.js
-Database: MongoDB
-Authentication: JWT (JSON Web Tokens)
-APIs: REST Countries, ExchangeRate API
-OCR: Tesseract.js (for receipt text extraction)
-
-🧑‍🤝‍🧑 Team Members
-
-👩‍💻 Hemangi Popat – Frontend Development & UI/UX Design
-👩‍💻 Venisha Thakker – Database Management & API Integration
-👩‍💻 Krishna Thakkar – Backend Development & Authentication
-👩‍💻 Khyati Thakkar – OCR Integration & Automation Logic
-
-🎨 Mockup & Flow Diagram
-
-📌 View our system mockup here → Excalidraw Mockup
-
-🌟 Highlights
-
-🧠 Smart multi-level approvals with dynamic rules
-
-📸 OCR-powered expense automation
-
-💹 Real-time currency conversion
-
-🔒 Secure login and user management
-
-🪄 Beautiful, intuitive UI
-
-🚀 Future Enhancements
-
-📊 AI-powered expense trend analysis
-
-💼 Integration with payroll systems
-
-🔔 Email & push notifications for approvals
-
-📱 Mobile-friendly responsive design
-
-💬 Conclusion
-
-ExpenseEase is built to streamline how organizations handle expense reimbursements — saving time, reducing errors, and boosting transparency.
-With automation at its core, ExpenseEase empowers businesses to focus on growth, not paperwork.
+```bash
+# Clone repository
+git clone https://github.com/your-username/expenseease.git
+cd expenseease
