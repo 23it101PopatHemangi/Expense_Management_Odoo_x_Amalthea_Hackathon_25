@@ -111,17 +111,27 @@ Companies struggle with:
 
 ---
 
+## 📸 Screenshots
+# My Project
+
+## 📸 Screenshots
+
+### 📝 Signup Page
+![Signup Page](./src/screenshots/signup.jpeg)
+
+### 👤 Admin Dashboard
+![Admin Dashboard](./src/screenshots/admin.jpeg)
+
+### 👔 Employee Dashboard
+![Employee Dashboard](./src/screenshots/employee.jpeg)
+
+### 📂 Manager Dashboard
+![Manager Dashboard](./src/screenshots/manager.jpeg)
+
+
 ## ⚙ Setup Instructions
 
 ```bash
 # Clone repository
 git clone https://github.com/your-username/expenseease.git
 cd expenseease
-
-## cd frontend
-
-npm install
-npm start
-
-## cd backend
-node mongodb-server.js
