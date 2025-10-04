@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1759558659955,
+    "name": "Test User's Company",
+    "country": "United States",
+    "baseCurrency": "USD",
+    "admin": 1759558659956
+  },
+  {
+    "id": 1759558971810,
+    "name": "Popat Hemangi's Company",
+    "country": "India",
+    "baseCurrency": "USD",
+    "admin": 1759558971811
+  }
+]

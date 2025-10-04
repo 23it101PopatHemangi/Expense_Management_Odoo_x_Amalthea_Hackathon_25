@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1759558659956,
+    "name": "Test User",
+    "email": "test@example.com",
+    "password": "$2a$12$VP9E1ouZiS0wDPo7SpWFqO9/nSmUfNdbCWBFxwYGA5z/DM/vSDB7a",
+    "role": "admin",
+    "company": 1759558659955,
+    "isActive": true,
+    "createdAt": "2025-10-04T06:17:39.955Z"
+  },
+  {
+    "id": 1759558971811,
+    "name": "Popat Hemangi",
+    "email": "23IT101@charusat.edu.in",
+    "password": "$2a$12$726uzgphL8iSgU4.bvBs/.rMuoVh0hM9f1ZgJURBK6OdSBy9lsxRC",
+    "role": "admin",
+    "company": 1759558971810,
+    "isActive": true,
+    "createdAt": "2025-10-04T06:22:51.810Z"
+  }
+]
